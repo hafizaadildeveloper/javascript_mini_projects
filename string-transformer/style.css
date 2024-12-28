@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    padding-top: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+input {
+    margin: 20px auto;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+fieldset {
+    text-align: left;
+    padding-left: 20px;
+    background-color: lightyellow;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+fieldset>legend {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: initial;
+    font-weight: initial;
+}
