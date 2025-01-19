@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: antiquewhite;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* overflow: scroll;
+    scrollbar-width: none; */
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#add-button {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#todo-item {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#todo-item:focus {
+    outline: 1px solid blue;
+}
+
+#todo-list {
+    max-width: calc(100% - 80%);
+    overflow: hidden;
+    scrollbar-width: thin;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#todo-list li {
+    overflow: scroll;
+    scrollbar-width: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
