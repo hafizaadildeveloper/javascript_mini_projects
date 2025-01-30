@@ -23,8 +23,9 @@ h1 {
     border-left: 2px solid green;
     border-right: 2px solid green;
     text-align: center;
-    text-shadow: 1.5px 0px 0px green;
+    text-shadow: 1.5px 0px 0px lightgreen;
     box-shadow: inset 1px -1px 10px lightgreen;
+    color: darkgreen;
 }
 
 input {
@@ -60,9 +61,27 @@ button:hover {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
+    position: relative;
+}
+
+#total::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: black;
+    opacity: 0;
+    transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
+}
+
+#total:hover::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
 }
 
 #total:hover {
-    transform: scale(1.5);
-    color: blue;
+    transform: rotate(180deg);
 }

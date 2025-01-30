@@ -1,4 +1,4 @@
-const btnEl = document.getElementById("calculate");
+const calcBtn = document.getElementById("calculate");
 const billInput = document.getElementById("bill");
 const tipInput = document.getElementById("tip");
 const totalSpan = document.getElementById("total");
@@ -10,4 +10,4 @@ function calculateTotal() {
     totalSpan.innerText = totalValue.toFixed(2);
 }
 
-btnEl.addEventListener("click", calculateTotal);
+calcBtn.addEventListener("click", calculateTotal);
